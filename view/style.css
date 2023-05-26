@@ -3,12 +3,19 @@ body {
 }
 
 .sidebar {
-    background: #fff;
+    background: #f0e7e7;
     height: 100vh;
     padding: 2rem 0;
     border-right: 1px solid #dee2e6;
 }
-
+.sidebar h3 {
+    background: #f0e7e7;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 .chat-list {
     list-style: none;
     padding: 0;
@@ -17,23 +24,31 @@ body {
 .chat-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
-    color: #212529;
+    padding: 10px;
+    margin: 10px 0;
+    background: #faf9f9;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
     text-decoration: none;
+    color: #333;
+}
+
+.chat-item:nth-child(odd) {
+    background: #fdfdfd;
 }
 
 .chat-item-photo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 1rem;
+    margin-right: 10px;
 }
 
 .chat-item-name {
-    font-size: 1rem;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-
 
 .main-content {
     padding: 2rem;

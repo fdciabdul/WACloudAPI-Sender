@@ -8,17 +8,6 @@ const accessToken = 'YOUR_ACCESS_TOKEN';
 // Create a Message instance
 const message = new Message(apiVersion, phoneNumberId, accessToken);
 
-// Send a text message
-const recipientPhoneNumber = 'RECIPIENT_PHONE_NUMBER';
-const messageContent = 'Hello from Whatsapp Cloud API Wrapper!';
-message.sendTextMessage(recipientPhoneNumber, messageContent)
-  .then(response => {
-    console.log('Text message sent:', response);
-  })
-  .catch(error => {
-    console.error('Error sending text message:', error);
-  });
-
 // Create a WebhookServer instance
 const port = 3000;
 const useNgrok = false; // Set to true if you want to use ngrok
